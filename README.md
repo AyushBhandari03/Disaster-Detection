@@ -24,16 +24,15 @@ The model is trained on the **Comprehensive Disaster Dataset (CDD) - Augmented**
 
 ## 📈 Model Performance
 
-![Model 1 Performance Output](assets/image_c1df66.png)
-![Model 2 Performance Output](assets/image_c1df66.png)
-*(Note: Replace the image path above with the exact location in your repository if different)*
-
 Both models were trained using the `Adam` optimizer (lr=0.0001) and `CrossEntropyLoss` with balanced class weights.
 
 | Model | Architecture | Accuracy | Highlights |
 | :--- | :--- | :---: | :--- |
 | **Ensemble Model** | ResNet-50 + EfficientNet-B0 | **96.91%** | Excellent precision (1.00) in filtering "Non-Damage" instances. |
 | **Vision Transformer** | ViT Small (Patch 16) | **95.08%** | Highly capable baseline achieving >90% recall on Fire and Human Damage. |
+
+![Model 1 Performance Output](ensemble.png)
+![Model 2 Performance Output](vit.png)
 
 ## ⚙️ Installation & Setup
 
