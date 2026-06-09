@@ -21,6 +21,7 @@ A Deep Learning-based image classification system designed to categorize disaste
 The model is trained on the **Comprehensive Disaster Dataset (CDD) - Augmented**. 
 * Images are resized to `224x224` and normalized using standard ImageNet parameters `([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])`.
 * The dataset is split into an 80% training set and a 20% validation set using PyTorch's `random_split`.
+🔗 **Dataset Link:** [https://drive.google.com/file/d/1-A0RMOZB9LzFpOCBkNh-fexBW6dCcQfx/view?usp=sharing]
 
 ## 📈 Model Performance
 
@@ -31,8 +32,12 @@ Both models were trained using the `Adam` optimizer (lr=0.0001) and `CrossEntrop
 | **Ensemble Model** | ResNet-50 + EfficientNet-B0 | **96.91%** | Excellent precision (1.00) in filtering "Non-Damage" instances. |
 | **Vision Transformer** | ViT Small (Patch 16) | **95.08%** | Highly capable baseline achieving >90% recall on Fire and Human Damage. |
 
+🔗 **Ensemble Model Weights (`disaster_ensemble.pth`):** [https://drive.google.com/file/d/1QPjnG06auiHyPnZekTBMQ9aOeb9LuO76/view?usp=sharing]
 ![Model 1 Performance Output](ensemble.png)
+
+🔗 **ViT Model Weights (`disaster_vit.pth`):** [https://drive.google.com/file/d/1y6UaoGL-0GPBB4JqFY8P6ABjzlDVYjNn/view?usp=sharing]
 ![Model 2 Performance Output](vit.png)
+
 
 ## ⚙️ Installation & Setup
 
